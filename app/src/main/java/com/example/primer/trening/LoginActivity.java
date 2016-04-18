@@ -46,7 +46,6 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         else{
-            System.out.println("##########################################");
             System.out.println(input_email);
             System.out.println(input_password);
         }
