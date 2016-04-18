@@ -20,7 +20,9 @@
             android:text="Anonymous"
             android:id="@+id/checkBox"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:buttonTint="#22b14c" />
 
         <ImageButton
             android:id="@+id/contest_button"
@@ -139,7 +141,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#22b14c">
+                android:background="#e0e0e0">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -182,6 +184,7 @@
                 android:text="sveip meg" />
 
         </SlidingDrawer>
+
     </FrameLayout>
 
 </FrameLayout>
