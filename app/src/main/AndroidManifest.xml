@@ -9,23 +9,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:label="Trening"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
+        <activity
+            android:name=".MainActivity">
+            //android:label="Main">
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login">
+            android:name=".LoginActivity">
+            //android:label="Sign In">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,8 +35,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".ContestActivity"
-            android:label="@string/title_activity_contest">
+            android:name=".ContestActivity">
+            //android:label="Contests">
         </activity>
     </application>
 
