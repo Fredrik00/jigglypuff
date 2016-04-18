@@ -37,7 +37,8 @@
             android:background="#00ffffff"
             android:layout_below="@+id/checkBox"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:onClick="toContest" />
 
         <RelativeLayout
             android:layout_width="match_parent"
