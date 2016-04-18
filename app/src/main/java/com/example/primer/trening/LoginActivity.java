@@ -15,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     String string_email = "u";
     String string_password = "p";
     ImageButton login;
+    ButtonPress bp = new ButtonPress();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +25,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void toMain(View view) {
-        login.setColorFilter(Color.argb(100, 0, 0, 0));
+        bp.Press(login);
 
-        new CountDownTimer(300, 300){
-            public void onFinish(){
-                login.setColorFilter(Color.argb(0, 0, 0, 0));
-            }
-
-            public void onTick(long millisUntilFinished){
-            }
-        }.start();
         Intent intent = new Intent(this, MainActivity.class);
         EditText password = (EditText) findViewById(R.id.password);
         AutoCompleteTextView email = (AutoCompleteTextView) findViewById(R.id.email);
