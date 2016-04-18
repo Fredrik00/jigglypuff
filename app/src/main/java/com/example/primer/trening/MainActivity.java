@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton contest;
+    ImageButton update;
     ButtonPress bp = new ButtonPress();
 
     @Override
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         contest = (ImageButton) findViewById(R.id.contest_button);
+        update = (ImageButton) findViewById(R.id.update_button);
     }
 
     public void toContest(View view) {
@@ -26,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void update(){
+    public void update(View view){
+        bp.Press(update);
         System.out.println("doing stuff");
     }
 }
