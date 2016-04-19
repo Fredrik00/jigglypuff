@@ -93,6 +93,7 @@
     <orderEntry type="library" exported="" name="play-services-basement-8.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.3.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-appindexing-8.1.0" level="project" />
+    <orderEntry type="library" exported="" name="mpandroidchartlibrary-2-2-4" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.3.0" level="project" />
     <orderEntry type="library" exported="" name="support-vector-drawable-23.3.0" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-23.3.0" level="project" />

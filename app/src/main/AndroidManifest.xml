@@ -13,13 +13,14 @@
         android:label="Trening"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".MainActivity">
-            //android:label="Main">
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".LoginActivity">
-            //android:label="Sign In">
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,8 +36,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".ContestActivity">
-            //android:label="Contests">
+            android:name=".ContestActivity"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

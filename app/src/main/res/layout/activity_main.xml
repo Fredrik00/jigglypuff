@@ -131,7 +131,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:content="@+id/linearLayout"
-            android:handle="@+id/button4"
+            android:handle="@+id/swipe_button"
             android:id="@+id/slidingDrawer"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true">
@@ -178,10 +178,10 @@
 
             <Button
                 android:background="#22b14c"
-                android:id="@+id/button4"
+                android:id="@+id/swipe_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="sveip meg" />
+                android:text="swipe me" />
 
         </SlidingDrawer>
 
