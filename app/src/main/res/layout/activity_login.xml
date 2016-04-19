@@ -60,8 +60,8 @@
             <ImageButton
                 android:id="@+id/sign_in_button"
                 style="?android:textAppearanceSmall"
-                android:layout_width="350dp"
-                android:layout_height="100dp"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
                 android:text="SIGN IN"
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
@@ -70,12 +70,12 @@
                 android:src="@drawable/login_button"
                 android:scaleType="fitCenter"
                 android:background="#00ffffff"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentRight="false"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@+id/password"
                 android:layout_marginTop="50dp"
-                android:onClick="toMain"/>
+                android:onClick="toMain"
+                android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
     </ScrollView>

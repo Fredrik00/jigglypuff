@@ -28,7 +28,7 @@
             android:id="@+id/contest_button"
             style="?android:textAppearanceSmall"
             android:layout_width="350dp"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:text="SIGN IN"
             android:textStyle="bold"
             android:textColor="@android:color/white"
@@ -39,102 +39,40 @@
             android:background="#00ffffff"
             android:layout_below="@+id/checkBox"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:onClick="toContest" />
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="220dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
             android:layout_below="@+id/contest_button"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/relativeLayout">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="horizontal"
-                android:layout_alignParentTop="true">
+            android:layout_marginTop="160dp">
 
 
-            <com.github.mikephil.charting.charts.PieChart
-                android:id="@+id/chart_daily"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_gravity="center_vertical" />
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart_daily"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_gravity="center_vertical" />
 
-            <com.github.mikephil.charting.charts.PieChart
-                android:id="@+id/chart_active"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_gravity="center_vertical" />
-            </LinearLayout>
-
-            <!--
-            <ImageView
-                android:src="@drawable/pie"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:id="@+id/imageView1"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Steps:"
-                android:id="@+id/steps1"
-                android:layout_below="@+id/imageView1"
-                android:layout_alignParentLeft="true"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="give me string"
-                android:id="@+id/daily_goal"
-                android:layout_below="@+id/steps1"
-                android:layout_alignParentLeft="true"/>
-
-            <ImageView
-                android:src="@drawable/pie"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:id="@+id/imageView2"
-                android:layout_alignTop="@+id/imageView1"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Steps:"
-                android:id="@+id/steps2"
-                android:layout_below="@+id/imageView2"
-                android:layout_alignParentRight="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="string reference here"
-                android:id="@+id/activity_contest"
-                android:layout_below="@+id/steps2"
-                android:layout_alignParentRight="true" />
-                -->
-
-        </RelativeLayout>
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart_active"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_gravity="center_vertical" />
+        </LinearLayout>
 
         <ImageButton
             android:id="@+id/update_button"
             style="?android:textAppearanceSmall"
             android:layout_width="250dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:text="SIGN IN"
             android:textStyle="bold"
             android:textColor="@android:color/white"
@@ -143,9 +81,8 @@
             android:src="@drawable/update_button"
             android:scaleType="fitCenter"
             android:background="#00ffffff"
-            android:layout_below="@+id/relativeLayout"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="420dp"
             android:onClick="update" />
     </RelativeLayout>
 
@@ -186,52 +123,75 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:text="WEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
-                            android:id="@+id/time_text" />
+                            android:id="@+id/time_left"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/time_spent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/time_left"
+                            android:layout_marginTop="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/map_text"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/time_spent"
+                            android:layout_marginTop="40dp"
+                            android:text="Active contestant positions:" />
 
                         <ImageView
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/imageView"
+                            android:layout_height="220dp"
+                            android:id="@+id/map"
                             android:layout_centerVertical="true"
                             android:layout_centerHorizontal="true"
                             android:src="@drawable/mapses"
-                            android:layout_alignTop="@+id/time_text" />
+                            android:layout_below="@+id/map_text"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/highscore_text"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/map"
+                            android:layout_marginTop="40dp"
+                            android:text="Top times:" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="180dp"
+                            android:id="@+id/highscores"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/highscores"
+                            android:layout_below="@+id/highscore_text"
+                            android:layout_marginTop="10dp" />
+
+                        <ImageButton
+                            android:layout_width="360dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/quit_button"
+                            android:clickable="true"
+                            android:src="@drawable/quit"
+                            android:background="#00ffffff"
+                            android:cropToPadding="false"
+                            android:scaleType="fitCenter"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/highscores"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="20dp" />
                     </RelativeLayout>
 
                 </android.support.v4.widget.NestedScrollView>
-
-                <!-- <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Large Text"
-                    android:id="@+id/textView" />
-
-                <ImageView
-                    android:src="@drawable/mapses"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
-                    android:id="@+id/textView2" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
-                    android:id="@+id/button5" />
-
-                <ListView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/listView" />-->
-
             </LinearLayout>
 
             <Button
@@ -239,7 +199,7 @@
                 android:id="@+id/swipe_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="swipe me" />
+                android:text="Active contest" />
 
         </SlidingDrawer>
 
