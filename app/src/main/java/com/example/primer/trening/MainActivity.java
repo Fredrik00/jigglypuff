@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         activePie.invalidate();
 
         ArrayList<Entry> entries = new ArrayList<>();
-        entries.add(new Entry(4000f, 0));
-        entries.add(new Entry(6000f, 1));
+        entries.add(new Entry(4000, 0));
+        entries.add(new Entry(6000, 1));
 
         PieDataSet dataset = new PieDataSet(entries, "# of Calls");
 

@@ -8,4 +8,26 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.primer.trening.ContestActivity"
     tools:showIn="@layout/activity_contest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/time_text"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mapses"
+            android:layout_below="@+id/time_text" />
+    </RelativeLayout>
+
 </android.support.v4.widget.NestedScrollView>
