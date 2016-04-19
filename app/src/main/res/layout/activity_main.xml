@@ -49,6 +49,31 @@
             android:layout_centerHorizontal="true"
             android:id="@+id/relativeLayout">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true">
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart_daily"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_gravity="center_vertical" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart_active"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!--
             <ImageView
                 android:src="@drawable/pie"
                 android:layout_width="150dp"
@@ -101,6 +126,7 @@
                 android:id="@+id/activity_contest"
                 android:layout_below="@+id/steps2"
                 android:layout_alignParentRight="true" />
+                -->
 
         </RelativeLayout>
 
