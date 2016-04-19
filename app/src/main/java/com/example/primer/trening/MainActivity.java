@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.SlidingDrawer;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.PieChart;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
     ImageButton contest;
     ImageButton update;
+    ImageButton quit;
+    SlidingDrawer slide;
     ButtonPress bp = new ButtonPress();
     ArrayList<Integer> colors = new ArrayList<>();
     PieChart dailyPie;
@@ -42,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
         contest = (ImageButton) findViewById(R.id.contest_button);
         update = (ImageButton) findViewById(R.id.update_button);
+        quit = (ImageButton) findViewById(R.id.quit_button);
+
+        slide = (SlidingDrawer) findViewById(R.id.slidingDrawer);
 
         dailyPie = (PieChart) findViewById(R.id.chart_daily);
         activePie = (PieChart) findViewById(R.id.chart_active);
@@ -76,6 +82,11 @@ public class MainActivity extends AppCompatActivity {
     public void update(View view){
         bp.Press(update);
         drawCharts();
+    }
+
+    public void quit(View view){
+        bp.Press(quit);
+        slide.animateClose();
     }
 
     public void drawCharts(){
