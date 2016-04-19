@@ -27,7 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9eff571e-af7b-4a5b-8a7e-50a35ed7a6bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/primer/trening/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/primer/trening/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jigglypuff.iws" />
@@ -59,13 +58,13 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/primer/trening/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.3438046">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state vertical-scroll-proportion="3.46875">
+              <caret line="111" column="40" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1998#2173#0" expanded="true" />
-                <element signature="e#2172#2173#0" expanded="true" />
-                <element signature="e#2933#2941#0" expanded="true" />
+                <element signature="e#2000#2175#0" expanded="true" />
+                <element signature="e#2174#2175#0" expanded="true" />
+                <element signature="e#2936#2944#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2376,7 +2375,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461097382844</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="quit_button lukker drawer">
+      <created>1461098151638</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1461098151638</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2472,7 +2477,8 @@
     <MESSAGE value="Fikset farger og update funksjon" />
     <MESSAGE value="Tester timer, bruker contestactivity som test for scrollbar status" />
     <MESSAGE value="status drawer is fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="status drawer is fix" />
+    <MESSAGE value="quit_button lukker drawer" />
+    <option name="LAST_COMMIT_MESSAGE" value="quit_button lukker drawer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2487,9 +2493,9 @@
           <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1998#2173#0" expanded="true" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2933#2941#0" expanded="true" />
+            <element signature="e#2000#2175#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2936#2944#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2585,9 +2591,9 @@
           <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1998#2173#0" expanded="true" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2933#2941#0" expanded="true" />
+            <element signature="e#2000#2175#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2936#2944#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2683,9 +2689,9 @@
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1998#2173#0" expanded="true" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2933#2941#0" expanded="true" />
+            <element signature="e#2000#2175#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2936#2944#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2912,13 +2918,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/primer/trening/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3438046">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state vertical-scroll-proportion="3.46875">
+          <caret line="111" column="40" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1998#2173#0" expanded="true" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2933#2941#0" expanded="true" />
+            <element signature="e#2000#2175#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2936#2944#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton contest;
     ImageButton update;
     ImageButton quit;
-    SlidingDrawer slide;
+    SlidingDrawer drawer;
     ButtonPress bp = new ButtonPress();
     ArrayList<Integer> colors = new ArrayList<>();
     PieChart dailyPie;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         update = (ImageButton) findViewById(R.id.update_button);
         quit = (ImageButton) findViewById(R.id.quit_button);
 
-        slide = (SlidingDrawer) findViewById(R.id.slidingDrawer);
+        drawer = (SlidingDrawer) findViewById(R.id.slidingDrawer);
 
         dailyPie = (PieChart) findViewById(R.id.chart_daily);
         activePie = (PieChart) findViewById(R.id.chart_active);
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void quit(View view){
         bp.Press(quit);
-        slide.animateClose();
+        drawer.animateClose();
     }
 
     public void drawCharts(){
