@@ -126,9 +126,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculateTime() {
-        // TODO Auto-generated method stub
         int dl = 0, hl = 0, ml = 0, sl = 0;
         int ds = 0, hs = 0, ms = 0, ss = 0;
+
         try
         {
             Date startDate = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse("2016-02-01 00:00:00");
@@ -147,35 +147,43 @@ public class MainActivity extends AppCompatActivity {
             ms = (int) (TimeUnit.MILLISECONDS.toMinutes(timeDiff2) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(timeDiff2)));
             ss = (int) (TimeUnit.MILLISECONDS.toSeconds(timeDiff2) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeDiff2)));
         }
+
         catch (ParseException e)
         {
             e.printStackTrace();
         }
-        if(dl==0)
-        {
-            timeLeft.setText("Time left: " + hl + ":" + ml + ":" + sl);
-        }
-        else if(hl==0)
-        {
-            timeLeft.setText("Time left: " + ml + ":" + sl);
-        }
-        else
+
+        if(dl>0)
         {
             timeLeft.setText("Time left: " + dl + ":" + hl + ":" + ml + ":" + sl);
         }
+        else if(hl>0)
+        {
+            timeLeft.setText("Time left: " + hl + ":" + ml + ":" + sl);
+        }
+        else if(ml>0)
+        {
+            timeLeft.setText("Time left: " + ml + ":" + sl);
+        }
+        else{
+            timeLeft.setText("Time left: " + sl);
+        }
 
 
-        if(ds==0)
+        if(ds>0)
+        {
+            timeSpent.setText("Time spent: " + ds + ":" + hs + ":" + ms + ":" + ss);
+        }
+        else if(hs>0)
         {
             timeSpent.setText("Time spent: " + hs + ":" + ms + ":" + ss);
         }
-        else if(hs==0)
+        else if(ms>0)
         {
             timeSpent.setText("Time spent: " + ms + ":" + ss);
         }
-        else
-        {
-            timeSpent.setText("Time spent: " + ds + ":" + hs + ":" + ms + ":" + ss);
+        else{
+            timeSpent.setText("Time spent: " + ss);
         }
     }
 }
