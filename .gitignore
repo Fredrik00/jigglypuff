@@ -10,4 +10,4 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
-.properties
+local.properties
