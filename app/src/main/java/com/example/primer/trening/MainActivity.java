@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
         PieData data = new PieData(labels, dataset);
         dataset.setColors(colors);
+        dataset.setValueTextSize(16f);
 
         dailyPie.setDescription("");
         dailyPie.setData(data);
