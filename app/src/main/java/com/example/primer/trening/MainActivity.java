@@ -186,4 +186,15 @@ public class MainActivity extends AppCompatActivity {
             timeSpent.setText("Time spent: " + ss);
         }
     }
+
+    @Override
+    public void onBackPressed(){
+        if (drawer.isOpened()){
+            drawer.animateClose();
+        }
+
+        else{
+            super.onBackPressed();
+        }
+    }
 }
